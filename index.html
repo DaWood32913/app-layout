@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>App Database</title>
+</head>
+<body>
+        <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+                  <h1 class="display-4">Employee Data Management</h1>
+                  <p class="lead">A Comprenhensive directory of employee billable hours</p>
+                </div>
+              </div>
+
+              <form>
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label for="inputEmail4">Employee Name</label>
+                        <input type="text" class="form-control" id="employee" placeholder="Employee Name">
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="inputPassword4">Role</label>
+                        <input type="text" class="form-control" id="role" placeholder="Role">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="inputAddress">Start Date (MM/DD/YYYY)</label>
+                      <input type="date" class="form-control" id="date" placeholder="Start Date (MM/DD/YYYY)">
+                    </div>
+                    <div class="form-group">
+                      <label for="inputAddress2">Monthly Rate</label>
+                      <input type="text" class="form-control" id="rate" placeholder="Monthly Rate">
+                    </div>
+                    <!-- <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label for="inputCity">City</label>
+                        <input type="text" class="form-control" id="inputCity">
+                      </div> -->
+                      <!-- <div class="form-group col-md-4">
+                        <label for="inputState">State</label>
+                        <select id="inputState" class="form-control">
+                          <option selected>Choose...</option>
+                          <option>...</option>
+                        </select>
+                      </div> -->
+                      <!-- <div class="form-group col-md-2">
+                        <label for="inputZip">Zip</label>
+                        <input type="text" class="form-control" id="inputZip">
+                      </div> -->
+                    <!-- </div>
+                    <div class="form-group">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                          Check me out
+                        </label>
+                      </div> -->
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="submit">Submit</button>
+                  </form>      
+
+                  <div class="jumbotron jumbotron-fluid">
+                        <div class="container-2">
+                            <div id="display-row">
+                          <h1 class="display-5"></h1>
+                          <p class="lead-2"></p>
+                          </div>
+                        </div>
+                      </div>
+
+
+    
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>    
+    <script src="javascript/app.js"></script>             
+</body>
+</html>
